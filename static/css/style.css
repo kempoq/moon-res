@@ -44,6 +44,29 @@ body {
   .nav {
     display: none;
   }
+
+  .form_place {
+    align-items: normal;
+    text-align: center;
+  }
+
+  .call_form input {
+    width: 90% !important;
+    height: 50px !important;
+  }
+
+  .call_form textarea {
+    width: 90% !important;
+  }
+
+  .call_form p {
+    width: 100%;
+  }
+
+  .send_button {
+    width: 90% !important;
+    height: 50px !important;
+  }
 }
 
 /*===== CSS =====*/
@@ -152,6 +175,8 @@ header ul li a:hover {
   background-color: #2b1055;
   color: #fff;
   border: 2px solid #fff;
+    transform: translateY(100px) scale(1.05); /* увеличиваем кнопку на 5% */
+    border-width: 2px; /* увеличиваем толщину рамки */
 }
 
 /* About section */
@@ -190,6 +215,76 @@ header ul li a:hover {
   margin: 0.5em 0;
   color: #fff;
   font-size: 1em;
+}
+
+/* Call form section */
+
+.call_form h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.call_form {
+  position: relative;
+  padding: 50px;
+  background-color: #1b1d1e;
+  color: #fff;
+}
+
+.form_place {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call_form input{
+  border: none;
+  height: 40px;
+  width: 300px;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.call_form input:invalid:not(:placeholder-shown){
+  border: 2px solid #e44141 ;
+  box-shadow: 0 0 15px #e44141;
+}
+
+.call_form p{
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.call_form textarea{
+  border: none;
+  min-height: 120px;
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+.call_form textarea:invalid:not(:placeholder-shown){
+  border: 2px solid #e44141 ;
+  box-shadow: 0 0 15px #e44141;
+}
+
+.send_button {
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  padding: 5px 15px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.2em;
+}
+
+.send_button:hover {
+  background-color: #2b1055;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 /* Footer */
