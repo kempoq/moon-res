@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Moonlight Parallax</title>
+    <title>Fly to Moon</title>
 </head>
 
 <body>
@@ -30,16 +30,9 @@
     </section>
 
     <section class="about-section" id="about">
-        <h2>What is a parallax?</h2>
+        <h2>Что мы предлагаем?</h2>
         <p>
-            The parallax scrolling allows the user to perceive an impression of depth. The website appears as a 3D
-            animation that scrolls down the page. This operational concept is particularly well adapted to
-            storytelling,
-            as the reading of the contents is encouraged by the scrolling effects, animations and advertising
-            displays.
-            The parallax scrolling is also found in web design under the terms parallax website, scrolling website
-            or
-            parallax web design.
+            <a href="./order.html">Страница заказа</a>
         </p>
         <p>
             The term parallax scrolling is used to describe websites whose operating concept differs significantly
@@ -140,18 +133,18 @@
                 </p>
                 Фамилия
                 <p>
-                    <input type="text" required minlength="3" maxlength="15" placeholder="Иванов" pattern="[А-ЯЁа-яё]+">
+                    <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Иванов" pattern="[А-ЯЁа-яё]+">
                 </p>
                 E-mail
                 <p>
-                    <input type="email" required minlength="7" placeholder="ivanov@mail.ru">
+                    <input type="email" id="email" required minlength="7" placeholder="ivanov@mail.ru">
                 </p>
                 Сообщение
                 <p>
-                    <textarea required minlength="5" placeholder="Ваше сообщение"></textarea>
+                    <textarea required minlength="5" id="mess" placeholder="Ваше сообщение"></textarea>
                 </p>
                 <p>
-                    <button class="send_button" type="submit">Отправить</button>
+                    <button class="send_button" onblur="send()" type="submit">Отправить</button>
                 </p>
             </form>
     </section>
@@ -177,6 +170,7 @@
     </footer>
 
     <script src="static/js/parallax.js"></script>
+    <script src="static/js/call_form.js"></script>
   <script src="https://kit.fontawesome.com/dbc353f1d2.js" crossorigin="anonymous"></script>
 </body>
 
