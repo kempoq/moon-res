@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="static/css/order.css">
     <title>Order</title>
 </head>
 <body>
+    <div class="quit_place">
+        <a href="index.html" class="quit">Выйти</a>
+    </div>
     <h2>Введите данные для регистрации заказа</h2>
     <form action="#" class="form_place">
+
+        <label for="order_type">Товар</label>
+        <input type="text" id="product" name="product" class="product_form" readonly>
+
         <label for="name">Имя</label>
         <input type="text" id="name" name="name" required minlength="3" maxlength="15" placeholder="Иван" pattern="[А-ЯЁа-яё]+">
 
@@ -19,18 +26,15 @@
         <input type="email" id="email" name="email" required minlength="7" placeholder="ivanov@mail.ru">
 
         <label for="phone">Номер телефона</label>
-        <input type="tel" id="phone" name="phone" required minlength="11" maxlength="11" placeholder="81111111111">
+        <input type="tel" id="phone" name="phone" required minlength="11" maxlength="11" placeholder="81111111111" pattern="[0-9]+">
 
-        <label for="order_type">Товар</label>
-        <input type=""
+        <div class="btn_place">
+            <button class="send_button" type="submit" onblur="send_order()">Отправить</button>
+        </div>
 
-        <p>
-            <button class="send_button" type="submit">Отправить</button>
-        </p>
-        <label for="phone">Телефон</label>
-        <input type="tel" name="phone">
-        <label for="phone">Телефон</label>
-        <input type="tel" name="phone">
     </form>
+ 
+    <script src="static/js/main.js"></script>
+    <script src="static/js/send_form.js"></script>
 </body>
 </html>
