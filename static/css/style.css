@@ -175,6 +175,8 @@ header ul li a:hover {
   background-color: #2b1055;
   color: #fff;
   border: 2px solid #fff;
+    transform: translateY(100px) scale(1.05); /* увеличиваем кнопку на 5% */
+    border-width: 2px; /* увеличиваем толщину рамки */
 }
 
 /* About section */
