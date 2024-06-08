@@ -17,14 +17,14 @@
         <ul class="nav">
             <li><a href="#about">О нас</a></li>
             <li><a href="#about">Организация</a></li>
-            <li><a href="#about">Связь с нами</a></li>
+            <li><a href="#contacts">Связь с нами</a></li>
         </ul>
     </header>
 
     <section class="home-section">
         <img src="assets/images/stars.png" alt="Stars overlay" id="stars">
         <img src="assets/images/moon.png" alt="Moon" id="moon">
-        <img src="assets/images/mountain.png" alt="Mountains back" id="mountains_back">
+        <img src="assets/images/mountain2.png" alt="Mountains back" id="mountains_back">
         <a href="#about" id="btn-letsgo">Полетели!</a>
         <img src="assets/images/mountains_frot.png" alt="Mountains front" id="mountains_front">
     </section>
@@ -129,6 +129,31 @@
             to consult, and the website would not reach its goal. Too many technical difficulties could frustrate
             the users and also damage the image of the site.
         </p>
+    </section>
+
+    <section class="call_form" id="contacts">
+        <h2>Свяжитесь с нами!</h2>
+            <form action="#" class="form_place">
+                Имя
+                <p>
+                    <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Иван" pattern="[А-ЯЁа-яё]+">
+                </p>
+                Фамилия
+                <p>
+                    <input type="text" required minlength="3" maxlength="15" placeholder="Иванов" pattern="[А-ЯЁа-яё]+">
+                </p>
+                E-mail
+                <p>
+                    <input type="email" required minlength="7" placeholder="ivanov@mail.ru">
+                </p>
+                Сообщение
+                <p>
+                    <textarea required minlength="5" placeholder="Ваше сообщение"></textarea>
+                </p>
+                <p>
+                    <button class="send_button" type="submit">Отправить</button>
+                </p>
+            </form>
     </section>
 
     <footer>
