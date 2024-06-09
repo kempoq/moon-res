@@ -15,9 +15,9 @@
     <header class="header">
         <a href="#" class="logo">FlyToMoon</a>
         <ul class="nav">
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#about">Организация</a></li>
-            <li><a href="#contacts">Связь с нами</a></li>
+            <li class="header_li"><a class="header_ul_li_a" href="#about">О нас</a></li>
+            <li class="header_li"><a class="header_ul_li_a"href="#about">Организация</a></li>
+            <li class="header_li"><a class="header_ul_li_a"href="#contacts">Связь с нами</a></li>
         </ul>
     </header>
 
@@ -26,20 +26,41 @@
         <img src="assets/images/moon.png" alt="Moon" id="moon">
         <img src="assets/images/mountain2.png" alt="Mountains back" id="mountains_back">
         <a href="#about" id="btn-letsgo">Полетели!</a>
-        <img src="assets/images/mountains_frot.png" alt="Mountains front" id="mountains_front">
+        <!-- <img src="assets/images/mountains_frot.png" alt="Mountains front" id="mountains_front"> -->
+    </section>
+
+    <section class="product_section" id="products">
+        <h2 class="product_h2">Что мы предлагаем?</h2>
+        <div class="product_place">
+            <div class="product_block">
+                <img class="product_pic" src="assets/images/pr_1.jpg" alt="pic" />
+                <div class="product_text">
+                    <h3 class="product_h3">Вокруг луны</h3>
+                    <p class="product_desc">Полёт вокруг луны</p>
+                    <a class="product_link" href="./order.html?name=moon_exs">Купить</a>
+                </div>
+            </div>
+            <div class="product_block">
+                <img class="product_pic" src="assets/images/pr_2.jpg" alt="pic" />
+                <div class="product_text">
+                    <h3 class="product_h3">На Луну</h3>
+                    <p class="product_desc">Прогулка по Луне</p>
+                    <a class="product_link" href="./order.html?name=moon_walk">Купить</a>
+                </div>
+            </div>
+            <div class="product_block">
+                <img class="product_pic" src="assets/images/pr_3.jpg" alt="pic" />
+                <div class="product_text">
+                    <h3 class="product_h3">На МКС</h3>
+                    <p class="product_desc">Путешествие на МКС</p>
+                    <a class="product_link" href="./order.html?name=MKS">Купить</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="about-section" id="about">
         <h2>Что мы предлагаем?</h2>
-        <p>
-            <a href="./order.html?name=product1">Заказать product1</a>
-        </p>
-        <p>
-            <a href="./order.html?name=product2">Заказать product2</a>
-        </p>
-        <p>
-            <a href="./order.html?name=product3">Заказать product3</a>
-        </p>
         <p>
             The term parallax scrolling is used to describe websites whose operating concept differs significantly
             from
@@ -49,7 +70,7 @@
             A
             background image moves slowly, while images or graphic elements in the foreground move faster.
         </p>
-        <h3>General information</h3>
+        <h3 class="about_h3">General information</h3>
         <p>
             Parallax Scrolling works with what is called parallax scrolling. When an observer moves parallel to two
             objects, the objects appear to move at different speeds. The closer object seems to move faster, the one
@@ -72,7 +93,7 @@
             of information based on the presentation and find the functionality of the website enjoyable (Joy of
             use).
         </p>
-        <h3>Functionality</h3>
+        <h3 class="about_h3">Functionality</h3>
         <p>
             Parallax scrolling can be created in different ways on websites. In general, background images and
             visual
@@ -101,7 +122,7 @@
             website
             for targeted use.
         </p>
-        <h3>In practice</h3>
+        <h3 class="about_h3">In practice</h3>
         <p>
             The most common use case is storytelling. Here, the contents are arranged in a way that tells a story -
             while the user scrolls down the page. The range of information and the technical representation of the
