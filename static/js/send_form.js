@@ -6,7 +6,8 @@ function send() {
 
     if (name.validity.valid == true && surname.validity.valid == true && email.validity.valid == true && mess.validity.valid == true)
     {
-        emailjs.send("service_sif3d6y", "template_1ou1zk7", { name: name.value, surname: surname.value, mess: mess.value, email: email.value }, "QeLL8fsnjypODRmlz") 
+        // emailjs.init("ваш_user_id")
+        emailjs.send("service_sif3d6y", "template_1ou1zk7", { name: name.value, surname: surname.value, mess: mess.value, email: email.value }) 
         .then(() => alert("Сообщение от " + surname.value + " " + name.value + " (" + email.value + ") отправлено")) 
         .catch(error => console.log('Возникла ошибка...', error));
     }

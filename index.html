@@ -27,9 +27,9 @@
         <a href="#" class="logo">FlyToMoon</a>
         <ul class="nav">
             <li class="header_li"><a class="header_ul_li_a" href="#products">Предложения</a></li>
-            <li class="header_li"><a class="header_ul_li_a"href="#about">Организация</a></li>
-            <li class="header_li"><a class="header_ul_li_a"href="#contacts">Связь с нами</a></li>
-            <li class="header_li"><a class="header_ul_li_a_in"href="./signin.html">Войти</a></li>
+            <li class="header_li"><a class="header_ul_li_a" href="#about">Организация</a></li>
+            <li class="header_li"><a class="header_ul_li_a" href="#contacts">Связь с нами</a></li>
+            <li class="header_li"><a class="header_ul_li_a_in" href="./signin.html">Войти</a></li>
         </ul>
     </header>
 
@@ -63,27 +63,29 @@
 
     <section class="call_form" id="contacts">
         <h2>Свяжитесь с нами!</h2>
-            <form action="#" class="form_place">
-                Имя
-                <p>
-                    <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Иван" pattern="[А-ЯЁа-яё]+">
-                </p>
-                Фамилия
-                <p>
-                    <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Иванов" pattern="[А-ЯЁа-яё]+">
-                </p>
-                E-mail
-                <p>
-                    <input type="email" id="email" required minlength="7" placeholder="ivanov@mail.ru">
-                </p>
-                Сообщение
-                <p>
-                    <textarea required minlength="5" id="mess" placeholder="Ваше сообщение"></textarea>
-                </p>
-                <p>
-                    <button class="send_button" onblur="send()" type="submit">Отправить</button>
-                </p>
-            </form>
+        <form action="#" class="form_place">
+            Имя
+            <p>
+                <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Иван"
+                    pattern="[А-ЯЁа-яё]+">
+            </p>
+            Фамилия
+            <p>
+                <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Иванов"
+                    pattern="[А-ЯЁа-яё]+">
+            </p>
+            E-mail
+            <p>
+                <input type="email" id="email" required minlength="7" placeholder="ivanov@mail.ru">
+            </p>
+            Сообщение
+            <p>
+                <textarea required minlength="5" id="mess" placeholder="Ваше сообщение"></textarea>
+            </p>
+            <p>
+                <button class="send_button" onblur="send()" type="submit">Отправить</button>
+            </p>
+        </form>
     </section>
 
     <footer>
@@ -95,7 +97,17 @@
     <script src="static/js/parallax.js"></script>
     <script src="static/js/send_form.js"></script>
     <script src="static/js/components.js"></script>
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
- 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "QeLL8fsnjypODRmlz",
+            });
+        })();
+    </script>
+    <!-- <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script> -->
+
 </body>
+
 </html>
