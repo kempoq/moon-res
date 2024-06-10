@@ -6,7 +6,12 @@ function send() {
 
     if (name.validity.valid == true && surname.validity.valid == true && email.validity.valid == true && mess.validity.valid == true)
     {
-        alert("Сообщение от " + surname.value + " " + name.value + " (" + email.value + ") отправлено");
+        // emailjs.init("QeLL8fsnjypODRmlz");
+        emailjs.send("service_sif3d6y", "template_1ou1zk7", { name: name.value, mess: mess.value, email: email.value }, "QeLL8fsnjypODRmlz") 
+        .then(() => alert("Сообщение от " + surname.value + " " + name.value + " (" + email.value + ") отправлено")) 
+        .catch(error => console.log('Возникла ошибка...', error));
+
+        // alert("Сообщение от " + surname.value + " " + name.value + " (" + email.value + ") отправлено");
     }
 
     return true;
